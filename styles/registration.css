@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Delius&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Delius', cursive;
+}
+
+.auth-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #0a0a0a;
+	color: aliceblue;
+}
+
+.auth-card {
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 3vw;
+	border-radius: 2vw;
+	box-shadow: 0 0 2vw rgba(0, 0, 0, 0.5);
+	width: 30vw;
+	text-align: center;
+}
+
+.auth-card h2 {
+	font-family: 'Aladin', cursive;
+	font-size: 2.5vw;
+	margin-bottom: 3vw;
+}
+
+.auth-form {
+	display: flex;
+	flex-direction: column;
+	gap: 2vw;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	gap: 1vw;
+}
+
+.input-group label {
+	font-size: 1.2vw;
+	color: aliceblue;
+}
+
+.input-group input {
+	padding: 1vw;
+	border-radius: 1vw;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: aliceblue;
+	font-size: 1.2vw;
+	width: 100%;
+	transition: background-color 0.3s ease;
+}
+
+.input-group input:focus {
+	background-color: rgba(0, 0, 0, 0.8);
+	outline: none;
+	border-color: rgba(255, 255, 255, 0.8);
+}
+
+.auth-button {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #fff;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	border-radius: 1vw;
+	padding: 1vw 2vw;
+	font-size: 1.2vw;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	text-transform: uppercase;
+}
+
+.auth-button:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 1vw rgba(255, 255, 255, 0.5);
+}
+
+.auth-button:active {
+	transform: scale(0.95);
+	box-shadow: none;
+}
+
+.signup-link,
+.signin-link {
+	font-size: 1vw;
+	color: #fff;
+	margin-top: 2vw;
+}
+
+.signup-link a,
+.signin-link a {
+	color: #fff;
+	text-decoration: underline;
+}

@@ -22,6 +22,9 @@ header {
 	box-shadow: 0 0 3vw rgba(0, 0, 0, 0.5);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 header h1 {
@@ -35,7 +38,7 @@ main {
 	width: 100%;
 	min-height: 100svh;
 	padding: 20vh 5vw 5vw;
-	background-image: url(/assets/background.jpg);
+	background-image: url(../assets/background.jpg);
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -259,4 +262,26 @@ section {
 
 .product-price {
 	font-size: 2vh;
+}
+
+header nav {
+	display: flex;
+	gap: 2vw;
+	align-items: center;
+}
+
+header button {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #fff;
+	border: none;
+	border-radius: 0.6vw;
+	padding: 0.8vw 1.5vw;
+	font-size: 1vw;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	font-weight: 600;
+}
+
+header button:hover {
+	background-color: rgba(255, 255, 255, 0.2);
 }

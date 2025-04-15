@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign In - My Coffee Shop</title>
+		<link rel="stylesheet" href="../styles/registration.css" />
+	</head>
+	<body>
+		<!-- Sign In Page -->
+		<div class="auth-container">
+			<div class="auth-card">
+				<h2>Sign In</h2>
+				<form class="auth-form" action="#" method="POST">
+					<div class="input-group">
+						<label for="signin-email">Email</label>
+						<input
+							type="email"
+							id="signin-email"
+							name="email"
+							required
+							placeholder="Enter your email"
+						/>
+					</div>
+					<div class="input-group">
+						<label for="signin-password">Password</label>
+						<input
+							type="password"
+							id="signin-password"
+							name="password"
+							required
+							placeholder="Enter your password"
+						/>
+					</div>
+					<button type="submit" class="auth-button">Sign In</button>
+				</form>
+				<p class="signup-link">
+					Don't have an account? <a href="./sign-up.html">Sign up</a>
+				</p>
+			</div>
+		</div>
+		<script src="./scripts/main.js"></script>
+	</body>
+</html>
