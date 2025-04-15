@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./styles/main.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Coffee shop ( demo )</h1>
+		</header>
+		<main>
+			<section>
+				<h2>Products</h2>
+				<div id="products">
+					<div class="product-card">
+						<div class="product-card__image">
+							<img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Caffe_Latte_at_Pulse_Cafe.jpg/1200px-Caffe_Latte_at_Pulse_Cafe.jpg"
+								alt="latte"
+							/>
+						</div>
+						<div class="product-card__text">
+							<h3 class="product-title">Latte</h3>
+							<p class="product-price">$3.50</p>
+							<button
+								class="product-card__button"
+								data-name="Latte"
+								data-price="3.5"
+							>
+								Add
+							</button>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__image">
+							<img
+								src="https://guentercoffee.com/cdn/shop/articles/blog-header-cappuccino-zubereiten-anleitung_f1ce80fc-3b3c-43ec-84d6-26abe2482cf0.jpg?v=1738152927&width=1200"
+								alt="cappuccino"
+							/>
+						</div>
+						<div class="product-card__text">
+							<h3 class="product-title">Cappuccino</h3>
+							<p class="product-price">$3.80</p>
+							<button
+								class="product-card__button"
+								data-name="Cappuccino"
+								data-price="3.8"
+							>
+								Add
+							</button>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__image">
+							<img
+								src="https://www.paul.fr/media/catalog/product/2/0/2021_pack_dri_expresso_3.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
+								alt="espresso"
+							/>
+						</div>
+						<div class="product-card__text">
+							<h3 class="product-title">Espresso</h3>
+							<p class="product-price">$2.50</p>
+							<button
+								class="product-card__button"
+								data-name="Espresso"
+								data-price="2.5"
+							>
+								Add
+							</button>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__image">
+							<img
+								src="https://www.paul.fr/media/catalog/product/2/0/2021_pack_dri_expresso_3.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
+								alt="espresso"
+							/>
+						</div>
+						<div class="product-card__text">
+							<h3 class="product-title">Espresso</h3>
+							<p class="product-price">$2.50</p>
+							<button
+								class="product-card__button"
+								data-name="Espresso"
+								data-price="2.5"
+							>
+								Add
+							</button>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__image">
+							<img
+								src="https://www.paul.fr/media/catalog/product/2/0/2021_pack_dri_expresso_3.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
+								alt="espresso"
+							/>
+						</div>
+						<div class="product-card__text">
+							<h3 class="product-title">Espresso</h3>
+							<p class="product-price">$2.50</p>
+							<button
+								class="product-card__button"
+								data-name="Espresso"
+								data-price="2.5"
+							>
+								Add
+							</button>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__image">
+							<img
+								src="https://www.paul.fr/media/catalog/product/2/0/2021_pack_dri_expresso_3.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
+								alt="espresso"
+							/>
+						</div>
+						<div class="product-card__text">
+							<h3 class="product-title">Espresso</h3>
+							<p class="product-price">$2.50</p>
+							<button
+								class="product-card__button"
+								data-name="Espresso"
+								data-price="2.5"
+							>
+								Add
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<aside>
+				<h2>Cart</h2>
+				<div id="cart-container">
+					<div id="cart">
+						<!-- Пример товара -->
+						<div class="cart-item" data-name="Latte" data-price="3.5">
+							<p class="cart-item__title">Latte</p>
+							<div class="cart-item__controls">
+								<button class="cart-item__button">−</button>
+								<span class="cart-item__count">2</span>
+								<button class="cart-item__button">+</button>
+							</div>
+							<p class="cart-item__total">$7.00</p>
+						</div>
+						<!-- ещё товары... -->
+					</div>
+				</div>
+				<div class="cart-bottom">
+					<div class="cart-total">
+						<strong>Total:</strong> <span id="total-price">$7.00</span>
+					</div>
+					<button class="checkout-button">Checkout</button>
+				</div>
+			</aside>
+		</main>
+	</body>
+</html>
