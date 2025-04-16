@@ -33,6 +33,7 @@
 							<h3 class="product-title">Latte</h3>
 							<p class="product-price">$3.50</p>
 							<button
+								onclick="add(this)"
 								class="product-card__button"
 								data-name="Latte"
 								data-price="3.5"
@@ -52,6 +53,7 @@
 							<h3 class="product-title">Cappuccino</h3>
 							<p class="product-price">$3.80</p>
 							<button
+								onclick="add(this)"
 								class="product-card__button"
 								data-name="Cappuccino"
 								data-price="3.8"
@@ -71,6 +73,7 @@
 							<h3 class="product-title">Espresso</h3>
 							<p class="product-price">$2.50</p>
 							<button
+								onclick="add(this)"
 								class="product-card__button"
 								data-name="Espresso"
 								data-price="2.5"
@@ -90,6 +93,7 @@
 							<h3 class="product-title">Espresso</h3>
 							<p class="product-price">$2.50</p>
 							<button
+								onclick="add(this)"
 								class="product-card__button"
 								data-name="Espresso"
 								data-price="2.5"
@@ -109,6 +113,7 @@
 							<h3 class="product-title">Espresso</h3>
 							<p class="product-price">$2.50</p>
 							<button
+								onclick="add(this)"
 								class="product-card__button"
 								data-name="Espresso"
 								data-price="2.5"
@@ -128,6 +133,7 @@
 							<h3 class="product-title">Espresso</h3>
 							<p class="product-price">$2.50</p>
 							<button
+								onclick="add(this)"
 								class="product-card__button"
 								data-name="Espresso"
 								data-price="2.5"
@@ -142,17 +148,7 @@
 				<h2>Cart</h2>
 				<div id="cart-container">
 					<div id="cart">
-						<!-- Пример товара -->
-						<div class="cart-item" data-name="Latte" data-price="3.5">
-							<p class="cart-item__title">Latte</p>
-							<div class="cart-item__controls">
-								<button class="cart-item__button">−</button>
-								<span class="cart-item__count">2</span>
-								<button class="cart-item__button">+</button>
-							</div>
-							<p class="cart-item__total">$7.00</p>
-						</div>
-						<!-- ещё товары... -->
+						<!-- товары... -->
 					</div>
 				</div>
 				<div class="cart-bottom">
