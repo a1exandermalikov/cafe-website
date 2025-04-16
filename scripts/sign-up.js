@@ -1,6 +1,11 @@
 let signupbtn = document.getElementById('signup-button')
 
-const users = JSON.parse(localStorage.getItem('users') || '{}')
+let users = JSON.parse(localStorage.getItem('users') || '{}')
+
+if (!users['admin@gmail.com']) {
+	users['admin@gmail.com'] = { password: 'admin123', cart: [] }
+	localStorage.setItem('users', JSON.stringify(users))
+}
 
 signupbtn.onclick = () => {
 	let email = document.getElementById('signup-email').value

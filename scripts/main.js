@@ -1,5 +1,50 @@
-const users = JSON.parse(localStorage.getItem('users') || '{}')
+let users = JSON.parse(localStorage.getItem('users') || '{}')
+
+if (!users['admin@gmail.com']) {
+	users['admin@gmail.com'] = { password: 'admin123', cart: [] }
+	localStorage.setItem('users', JSON.stringify(users))
+}
+
 const cart = document.getElementById('cart')
+const allProducts = JSON.parse(localStorage.getItem('products') || '[]')
+
+function productsItem(name, image, price) {
+	return `<div class="product-card">
+						<div class="product-card__image">
+							<img
+								src="${image}"
+								alt="latte"
+							/>
+						</div>
+						<div class="product-card__text">
+							<h3 class="product-title">${name}</h3>
+							<p class="product-price">$${price}</p>
+							<button
+								onclick="add(this)"
+								class="product-card__button"
+								data-name="${name}"
+								data-price="${price}"
+							>
+								Add
+							</button>
+						</div>
+					</div>`
+}
+
+function renderProducts() {
+	const productsContainer = document.getElementById('products')
+	productsContainer.innerHTML = ''
+
+	allProducts.forEach(product => {
+		productsContainer.innerHTML += productsItem(
+			product.name,
+			product.image,
+			product.price
+		)
+	})
+}
+
+renderProducts()
 
 function cartItem(name, price, count = 1) {
 	const total = (price * count).toFixed(2)
